@@ -9,6 +9,8 @@ import {
   Grid,
   theme,
   Container,
+  Heading,
+  Divider
 } from '@chakra-ui/react';
 import Header from './component/Header';
 import { Logo } from './Logo';
@@ -18,7 +20,13 @@ function App() {
     <ChakraProvider theme={theme}>
     <Header/>
     <Container maxW='container.lg'>
-      
+    <Box py='2'>
+      <Heading size='xl'>
+        Hello World!
+      </Heading>
+      <Text fontSize='xl'>gggggg</Text>
+    </Box>
+      <Divider/>
     </Container>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
