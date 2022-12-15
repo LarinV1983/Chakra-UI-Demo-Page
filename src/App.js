@@ -82,9 +82,9 @@ function App() {
     <Container maxW='container.lg'>
     <Box py='2'>
       <Heading size='xl'>
-        Hello World!
+        Chakra UI Demo Page
       </Heading>
-      <Text fontSize='xl'>gggggg</Text>
+      <Text fontSize='xl'> Hello from Chakra UI Components </Text>
     </Box>
       <Divider/>
       <Card cards={posts}/>
