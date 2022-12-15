@@ -7,10 +7,10 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
   Container,
   Heading,
-  Divider
+  Divider,
+  extendTheme,
 } from '@chakra-ui/react';
 import Header from './component/Header';
 import Card from './component/Card';
@@ -53,6 +53,27 @@ const posts = [ {
     "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
   },
   ]
+
+const theme = extendTheme({
+  colors: {
+    brand: {
+      100: 'blue',
+      200: 'blue',
+      300: 'blue',
+      400: 'blue',
+      500:'brown',
+      600:'brown',
+      700:'brown',
+    },
+  },
+  components: {
+    Button: {
+      baseStyle: {
+        fontWeight: 'bold', 
+      },
+    },
+  },
+});
 
 function App() {
   return (

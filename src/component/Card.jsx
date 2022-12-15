@@ -1,6 +1,6 @@
 import React from 'react';
 import { SimpleGrid,
-				 Box,
+				 Stack,
 				 Button, 
 				 Text, 
 				 Heading } from '@chakra-ui/react';
@@ -11,17 +11,17 @@ import { SimpleGrid,
 		<SimpleGrid columns={[1, null, 2, 3]} spacing={[4, null, 6]} py='4'>
 		{
 			cards.map(card=>(
-				<Box key={card.title}>
+				<Stack key={card.title} spacing={2} _hover={{shadow: 'md'}} p={2}>
 				<Heading as='h3'>
 				{card.title}
 				</Heading>
 				<Text>
 					{card.body}
 				</Text>
-				<Button as='a'>
+				<Button as='a' colorScheme='brand'>
 					Read more
 				</Button>
-				</Box>
+				</Stack>
 				))
 		}
 		</SimpleGrid>
